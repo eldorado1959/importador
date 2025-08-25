@@ -1,0 +1,18 @@
+DATA DIVISION. FILE SECTION. FD ESTOQUE LABEL RECORD IS STANDARD VALUE OF FILE-ID IS "DEPOSITO.DAT". 01 REG-EST. 03 CODIGO-E PIC X(08). 03 DESCRI-E PIC X(35). 03 MARCA-E PIC X(10). 03 VALOR-E PIC 9(07)V99. 03 VALOR2-E PIC 9(07)V99. 03 QUANT-E PIC 9(03). 03 PTO-E PIC 99. 03 PRECO-ANT PIC 9(07)V99. 03 DATA-ALT. 05 DIA-ALT PIC 99. 05 MES-ALT PIC 99. 05 ANO-ALT PIC 99. 03 FORNECEDOR PIC X(10). 03 DATA-E PIC 9(06). 03 PERC-LUCRO PIC 9(03).
+
+| Campo      | Tipo     | Tamanho | Observação                                      |
+| ---------- | -------- | ------- | ----------------------------------------------- |
+| CODIGO-E   | X(08)    | 8       | Código alfanumérico                             |
+| DESCRI-E   | X(35)    | 35      | Descrição                                       |
+| MARCA-E    | X(10)    | 10      | Marca                                           |
+| VALOR-E    | 9(07)V99 | 9       | Número com 2 decimais (ex: 000123400 → 1234,00) |
+| VALOR2-E   | 9(07)V99 | 9       | Idem                                            |
+| QUANT-E    | 9(03)    | 3       | Quantidade                                      |
+| PTO-E      | 99       | 2       | Ponto (?)                                       |
+| PRECO-ANT  | 9(07)V99 | 9       | Preço anterior                                  |
+| DIA-ALT    | 99       | 2       | Dia da alteração                                |
+| MES-ALT    | 99       | 2       | Mês da alteração                                |
+| ANO-ALT    | 99       | 2       | Ano (2 dígitos)                                 |
+| FORNECEDOR | X(10)    | 10      | Fornecedor                                      |
+| DATA-E     | 9(06)    | 6       | Data (formato tipo `AAMMDD` ou `DDMMAA`)        |
+| PERC-LUCRO | 9(03)    | 3       | Percentual de lucro                             |
