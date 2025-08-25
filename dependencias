@@ -1,0 +1,14 @@
+npm install mysql2 readline-sync
+npm install -D @types/node
+
+
+
+npx tsc
+
+node dist/importarEstoque.js
+
+
+  
+  
+
+  
